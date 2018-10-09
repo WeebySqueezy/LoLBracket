@@ -1,1 +1,1 @@
-# LoLBracket
+# League of Legends Bracket
