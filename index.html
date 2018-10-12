@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+   
     <meta charset = "UTF-8" />
 <title>League of Legends Bracket</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,6 +14,10 @@
         text-align: center;
         background:url(img/bg.jpg);
         background-size:cover;
+    }
+    button {
+        position: absolute;
+        margin-left: 39.6%;
     }
     canvas {
         display: block;
@@ -61,8 +66,8 @@
 </style>
 </head>
 <body>
-    <h1>LoLBracket</h1>
-
+    <h1>League of Legends Bracket</h1>
+    <button id = "recent">View Recent Brackets</button>
     <div id="A">
      <form>
        <fieldset>
@@ -70,38 +75,38 @@
           <legend>Bracket A</legend>
           <p>
              <label>Team 1</label>
-             <select id = "1.1">
-               <option value = "1">G2</option>
-               <option value = "2">Flash Wolves</option>
-               <option value = "3">Phong Vu Buffalo</option>
-               <option value = "4">Afreeca Freecs</option>
+             <select id = "oneone">
+               <option value = "G2">G2</option>
+               <option value = "Flash Wolves">Flash Wolves</option>
+               <option value = "Phong Vu Buffalo">Phong Vu Buffalo</option>
+               <option value = "Afreeca Freecs">Afreeca Freecs</option>
              </select>
                 </p>
       
            <p>
                <label>Team 2</label>
-             <select id = "1.2">
-               <option value = "1">Flash Wolves</option>
-               <option value = "2">G2</option>
-               <option value = "3">Phong Vu Buffalo</option>
-               <option value = "4">Afreeca Freecs</option>
+             <select id = "onetwo">
+               <option value = "Flash Wolves">Flash Wolves</option>
+               <option value = "G2">G2</option>
+               <option value = "Phong Vu Buffalo">Phong Vu Buffalo</option>
+               <option value = "Afreeca Freecs">Afreeca Freecs</option>
              </select>
           </p>
             <p>
                <label>Team 3</label>
-             <select id = "1.3">
-               <option value = "1">Phong Vu Buffalo</option>
-               <option value = "2">Flash Wolves</option>
-               <option value = "3">G2</option>
-               <option value = "4">Afreeca Freecs</option>
+             <select id = "onethree">
+               <option value = "Phong Vu Buffalo">Phong Vu Buffalo</option>
+               <option value = "Flash Wolves">Flash Wolves</option>
+               <option value = "G2">G2</option>
+               <option value = "Afreeca Freecs">Afreeca Freecs</option>
              </select>
           </p> <p>
                <label>Team 4</label>
-             <select id = "1.4">
-               <option value = "1">Afreeca Freecs</option>
-               <option value = "2">Flash Wolves</option>
-               <option value = "3">Phong Vu Buffalo</option>
-               <option value = "4">G2</option>
+             <select id = "onefour">
+               <option value = "Afreeca Freecs">Afreeca Freecs</option>
+               <option value = "Flash Wolves">Flash Wolves</option>
+               <option value = "Phong Vu Buffalo">Phong Vu Buffalo</option>
+               <option value = "G2">G2</option>
              </select>
           </p>
        </fieldset>
@@ -114,35 +119,38 @@
           <legend>Bracket B</legend>
           <p>
              <label>Team 1</label>
-             <select id = "2.1">
-               <option value = "1">Cloud 9</option>
-               <option value = "2">Gen. G</option>
-               <option value = "3">Team Vitality</option>
-               <option value = "4">Royal Never Give Up</option>
+             <select id = "twoone">
+               <option value = "Cloud 9">Cloud 9</option>
+               <option value = "Gen. G">Gen. G</option>
+               <option value = "Team Vitality">Team Vitality</option>
+               <option value = "Royal Never Give Up">Royal Never Give Up</option>
              </select>
-          </p> <p>
+          </p>
+           <p>
              <label>Team 2</label>
-             <select id = "2.2">
-               <option value = "1">Gen.G</option>
-               <option value = "2">Cloud 9</option>
-               <option value = "3">Team Vitality</option>
-               <option value = "4">Royal Never Give Up</option>
+             <select id = "twotwo">
+               <option value = "Gen. G">Gen.G</option>
+               <option value = "Cloud 9">Cloud 9</option>
+               <option value = "Team Vitality">Team Vitality</option>
+               <option value = "Royal Never Give Up">Royal Never Give Up</option>
              </select>
-          </p> <p>
+          </p>
+           <p>
              <label>Team 3</label>
-             <select id = "2.3">
-               <option value = "1">Team Vitality</option>
-               <option value = "2">Gen. G</option>
-               <option value = "3">Cloud 9</option>
-               <option value = "4">Royal Never Give Up</option>
+             <select id = "twothree">
+               <option value = "Team Vitality">Team Vitality</option>
+               <option value = "Gen. G">Gen. G</option>
+               <option value = "Cloud 9">Cloud 9</option>
+               <option value = "Royal Never Give Up">Royal Never Give Up</option>
              </select>
-          </p> <p>
+          </p> 
+           <p>
              <label>Team 4</label>
-             <select id = "2.4">
-               <option value = "1">Royal Never Give Up</option>
-               <option value = "2">Gen. G</option>
-               <option value = "3">Team Vitality</option>
-               <option value = "4">Cloud 9</option>
+             <select id = "twofour">
+               <option value = "Royal Never Give Up">Royal Never Give Up</option>
+               <option value = "Gen. G">Gen. G</option>
+               <option value = "Team Vitality">Team Vitality</option>
+               <option value = "Cloud 9">Cloud 9</option>
              </select>
           </p>
        </fieldset>
@@ -155,35 +163,35 @@
           <legend>Bracket C</legend>
           <p>
              <label>Team 1</label>
-             <select id = "3.1">
-               <option value = "1">Kt Rolster</option>
-               <option value = "2">Edward Gaming</option>
-               <option value = "3">Team Liquid</option>
-               <option value = "4">MAD Team</option>
+             <select id = "threeone">
+               <option value = "Kt Rolster">Kt Rolster</option>
+               <option value = "Edward Gaming">Edward Gaming</option>
+               <option value = "Team Liquid">Team Liquid</option>
+               <option value = "MAD Team">MAD Team</option>
              </select>
           </p>   <p>
              <label>Team 2</label>
-             <select id = "3.2">
-               <option value = "1">Edward Gaming</option>
-               <option value = "2">Kt Rolster</option>
-               <option value = "3">Team Liquid</option>
-               <option value = "4">MAD Team</option>
+             <select id = "threetwo">
+               <option value = "Edward Gaming">Edward Gaming</option>
+               <option value = "Kt Rolster">Kt Rolster</option>
+               <option value = "Team Liquid">Team Liquid</option>
+               <option value = "MAD Team">MAD Team</option>
              </select>
           </p>   <p>
              <label>Team 3</label>
-             <select id = "3.3">
-               <option value = "1">Kt Rolster</option>
-               <option value = "2">Edward Gaming</option>
-               <option value = "3">Team Liquid</option>
-               <option value = "4">MAD Team</option>
+             <select id = "threethree">
+               <option value = "Kt Rolster">Kt Rolster</option>
+               <option value = "Edward Gaming">Edward Gaming</option>
+               <option value = "Team Liquid">Team Liquid</option>
+               <option value = "MAD Team">MAD Team</option>
              </select>
           </p>   <p>
              <label>Team 4</label>
-             <select id = "3.4">
-               <option value = "1">MAD Team</option>
-               <option value = "2">Edward Gaming</option>
-               <option value = "3">Team Liquid</option>
-               <option value = "4">Kt Rolster</option>
+             <select id = "threefour">
+               <option value = "MAD Team">MAD Team</option>
+               <option value = "Edward Gaming">Edward Gaming</option>
+               <option value = "Team Liquid">Team Liquid</option>
+               <option value = "Kt Rolster">Kt Rolster</option>
              </select>
           </p>
        </fieldset>
@@ -196,42 +204,63 @@
           <legend>Bracket D</legend>
           <p>
              <label>Team 1</label>
-             <select id = "4.1">
-               <option value = "1">G-Rex</option>
-               <option value = "2">Fnatic</option>
-               <option value = "3">Invictus</option>
-               <option value = "4">100 Thieves</option>
+             <select id = "fourone">
+               <option value = "G-Rex">G-Rex</option>
+               <option value = "Fnatic">Fnatic</option>
+               <option value = "Invictus">Invictus</option>
+               <option value = "100 Thieves">100 Thieves</option>
              </select>
           </p> <p>
              <label>Team 2</label>
-             <select id = "4.2">
-               <option value = "1">Fnatic</option>
-               <option value = "2">G-Rex</option>
-               <option value = "3">Invictus</option>
-               <option value = "4">100 Thieves</option>
+             <select id = "fourtwo">
+               <option value = "Fnatic">Fnatic</option>
+               <option value = "G-Rex">G-Rex</option>
+               <option value = "invictus">Invictus</option>
+               <option value = "100 Thieves">100 Thieves</option>
              </select>
           </p> <p>
-             <label>Team 1</label>
-             <select id = "4.3">
-               <option value = "1">Invictus</option>
-               <option value = "2">Fnatic</option>
-               <option value = "3">G-Rex</option>
-               <option value = "4">100 Thieves</option>
+             <label>Team 3</label>
+             <select id = "fourthree">
+               <option value = "Invictus">Invictus</option>
+               <option value = "Fnatic">Fnatic</option>
+               <option value = "G-Rex">G-Rex</option>
+               <option value = "100 Thieves">100 Thieves</option>
              </select>
           </p> <p>
-             <label>Team 1</label>
-             <select id = "4.4">
-               <option value = "1">100 Thieves</option>
-               <option value = "2">Fnatic</option>
-               <option value = "3">Invictus</option>
-               <option value = "4">G-Rex</option>
+             <label>Team 4</label>
+             <select id = "fourfour">
+               <option value = "100 Thieves">100 Thieves</option>
+               <option value = "Fnatic">Fnatic</option>
+               <option value = "Invictus">Invictus</option>
+               <option value = "G-Rex">G-Rex</option>
              </select>
           </p>
+           
        </fieldset>
     </form>
     </div>
+  
     
     
     
 </body>
 </html>
+<!- [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+-->
